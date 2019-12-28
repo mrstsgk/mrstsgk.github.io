@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+}
+
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2017/02/15/11/05/texture-2068283__480.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  padding: 5rem;
+  font-family: "Hitagino Kaku Gothic","メイリオ",sans-serif;
+}
+
+main h1 {
+  text-align: center;
+  font-family: "Yu-Gothic","遊ゴシック",YuGothic,"遊ゴシック体";
+  color: rgba(156, 39, 176, 0.3);
+}
+
+#info dl {
+  margin-bottom: 30px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+
+/* header */
+header {
+  border-top: 8px solid #614226;
+}
+
+header h1 {
+  font-size: 2.0em;
+  margin: 40px 0 30px 0;
+  text-align: center;
+}
+
+header nav ul {
+  width: 940px;
+  margin: 0 auto 30px auto;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+header nav ul li {
+  float: left;
+  width: 155px;
+  margin-right: 2px;
+  text-align: center;
+}
+
+header nav ul li:last-child {
+  margin-right: 0;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+header nav ul li a {
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #fff;
+  background-color: #614226;
+}
+
+header nav ul li a:hover,
+header nav ul li a:active,
+header nav ul li.current a {
+  background-color: #000;
+}
+
+
+
+
+footer {
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  background-color: #614226;
+}
+
+footer ul {
+  margin-bottom: 20px;
+}
+
+footer ul li {
+  display: inline;
+}
+
+footer ul li a {
+  color: #fff;
+}
+
+footer ul li a:link{
+  text-decoration: none;
+}
+
+footer ul li a:hover,
+footer ul li a:active {
+  text-decoration: underline;
+}

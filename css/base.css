@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+    background-image: url("https://cdn.pixabay.com/photo/2017/02/15/11/05/texture-2068283__480.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+  }
+}
+* header */
+header {
+  border-top: 8px solid #614226;
+}
+
+header h1 {
+  font-size: 2.0em;
+  margin: 40px 0 30px 0;
+  text-align: center;
+}
+
+header nav ul {
+  width: 940px;
+  margin: 0 auto 30px auto;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+header nav ul li {
+  float: left;
+  width: 155px;
+  margin-right: 2px;
+  text-align: center;
+}
+
+header nav ul li:last-child {
+  margin-right: 0;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+header nav ul li a {
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #fff;
+  background-color: #614226;
+}
+
+header nav ul li a:hover,
+header nav ul li a:active,
+header nav ul li.current a {
+  background-color: #000;
+}
+
+/* main */
+main {
+  width: 940px;
+  margin: 0 auto;
+}
+
+main h2 {
+  font-size: 1.5em;
+
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#main_image {
+  margin-bottom: 30px;
+}
+
+#main_content {
+  float: left;
+  width: 600px;
+}
+
+#sidebar {
+  float: right;
+  width: 300px;
+}
+
+#info dl {
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+#info dt {
+  float: left;
+  width: 10em;
+}
+
+#info dt,
+#info dd {
+  line-height: 1.5;
+}
+
+#campaign li {
+  line-height: 1.5;
+  margin-left: 20px;@charset "utf-8";
+}
+
+/* sidebar */
+#sidebar ul {
+  margin: 0;
+  padding: 0;
+}
+
+#sidebar ul li {
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+/* footer */
+footer {
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  background-color: #614226;
+}
+
+footer ul {
+  margin-bottom: 20px;
+}
+
+footer ul li {
+  display: inline;
+}

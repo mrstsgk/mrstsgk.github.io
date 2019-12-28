@@ -1,0 +1,103 @@
+<html lang="ja">
+  <head>
+   <meta charset="utf-8">
+    <title>お問い合わせ</title>
+    <meta name="description" content="Sample Cafeの公式サイトです。商品情報、店舗紹介、アクセス、会社情報など。">
+    <meta name="keywords" content="Sample Cafe,カフェ,コーヒー">
+    <link rel="stylesheet" href="css/html5reset-1.6.1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/form.css">
+  </head>
+  <body id="form">
+    <!-- header begin -->
+    <header id="form">
+    <h1>お問い合わせ</h1>
+    <nav>
+      <ul class="clearfix">
+    <li><a href="index.html">ホーム</a></li>
+    <li><a href="menu.html">商品情報</a></li>
+    <li><a href="shop.html">店舗紹介</a></li>
+    <li><a href="place.html">アクセス</a></li>
+    <li><a href="#">会社情報</a></li>
+    <li class="current"><a href="form.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    </header>
+
+    <body>
+    <h1>お問い合わせフォーム</h1>
+    <form action="#" method="post">
+      <table border="5">
+        <tr>
+          <th>名前 *</th>
+          <td><input type="text" name="kana" maxlength="10" value=""  placeholder="セイメイ" pattern="[ァ-ヴー\s　]+" title="カタカナ" required /></td>
+        </tr>
+        <tr>
+          <th>生年月日 *</th>
+          <td><input type="date" name="date" required></td>
+        </tr>
+        <tr>
+          <th>性別</th>
+          <td>
+            <input type="radio" name="gender" value="male" checked>男性
+            <input type="radio" name="gender" value="female" >女性
+          </td>
+        </tr>
+        <tr>
+          <th>電話番号(ハイフン抜き)*</th>
+          <td>
+            <input type="text" name="tel" value="" style="ime-mode:disabled" placeholder="09012345678" pattern="\d{2,4}-?\d{3,4}-?\d{3,4}" title="電話番号" required />
+          </td>
+        </tr>
+        <tr>
+          <th>メールアドレス *</th>
+          <td>
+            <input type="text" name="email" value="" style="ime-mode:disabled" placeholder="localname@domain.com"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="メールアドレス" required />
+          </td>
+        </tr>
+        <tr>
+          <th>現在の職業 *</th>
+          <td>
+            <select name="job" required>
+              <option value="" selected>選択してください</option>
+              <option value="student">学生</option>
+              <option value="part-time">アルバイト・パートタイム</option>
+              <option value="full-time">正社員</option>
+              <option value="other">その他</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>お問合せ内容</th>
+          <td>
+            <textarea name="contents" cols="40" rows="8"></textarea>
+          </td>
+        </tr>
+      </table>
+      <input type="submit" value="送信">
+    </form>
+    <p>*の項目は入力必須となります。</p>
+  </body>
+
+
+
+    <footer>
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="menu.html">商品情報</a></li>
+        <li><a href="shop.html">店舗紹介</a></li>
+        <li><a href="place.html">アクセス</a></li>
+        <li><a href="#">会社情報</a></li>
+        <li><a href="form.html">お問い合わせ</a></li>
+      </ul>
+
+
+        <small>&copy; 2019 Sample Cafe</small>
+    </footer>
+    <!-- footer end -->
+
+
+      </body>
+
+    </html>

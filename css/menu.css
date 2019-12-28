@@ -1,0 +1,409 @@
+@charset "utf-8";
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+}
+
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2017/02/15/11/05/texture-2068283__480.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  padding: 5rem;
+  font-family: "Hitagino Kaku Gothic","メイリオ",sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+
+/* header */
+header {
+  border-top: 8px solid #614226;
+}
+
+header h1 {
+  font-size: 2.0em;
+  margin: 40px 0 30px 0;
+  text-align: center;
+}
+
+header nav ul {
+  width: 940px;
+  margin: 0 auto 30px auto;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+header nav ul li {
+  float: left;
+  width: 155px;
+  margin-right: 2px;
+  text-align: center;
+}
+
+header nav ul li:last-child {
+  margin-right: 0;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+header nav ul li a {
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #fff;
+  background-color: #614226;
+}
+
+header nav ul li a:hover,
+header nav ul li a:active,
+header nav ul li.current a {
+  background-color: #000;
+}
+
+
+
+
+footer {
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  background-color: #614226;
+}
+
+footer ul {
+  margin-bottom: 20px;
+}
+
+footer ul li {
+  display: inline;
+}
+
+footer ul li a {
+  color: #fff;
+}
+
+footer ul li a:link{
+  text-decoration: none;
+}
+
+footer ul li a:hover,
+footer ul li a:active {
+  text-decoration: underline;
+}
+
+#wrapper{
+margin:0 auto;
+padding:0 1%;
+width:98%;
+position:relative;
+}
+
+.inner{
+margin:0 auto;
+width:100%;
+}
+/* メイン画像（トップページ+サブページ）*/
+#mainBanner{
+margin:20px auto;
+padding:0;
+width:100%;
+line-height:0;
+}
+
+#mainBanner .inner{position:relative;}
+
+#mainBanner img{
+max-width:100%;
+height:auto;
+padding:5px;
+background:#fff;
+box-shadow:#ccc 0 0 3px;
+}
+
+.slogan{
+position:absolute;
+margin:5px;
+height:auto;
+bottom:0;
+left:0;
+padding:5px 10px;
+line-height:1.4;
+z-index:100;
+color:#fff;
+background:url(images/tp2.png);
+}
+
+.slogan h2{
+padding-bottom:5px;
+font-size:20px;
+}
+
+.slogan h3{
+font-size:14px;
+}
+
+
+
+/**************************
+/* グリッド
+**************************/
+.gridWrapper{
+padding-bottom:20px;
+overflow: hidden;
+}
+
+* html .gridWrapper{height:1%;}
+
+.grid{
+float:left;
+background:#fff;
+border-top:5px solid #bc7d03;
+border-bottom:5px solid #bc7d03;
+box-shadow:0 0 3px #ddd;
+}
+
+.grid h3{
+padding:10px 0;
+font-weight:bold;
+color:#fff;
+background:#eca92b;
+text-align:center;
+}
+
+.grid p{
+padding:5px 10px;
+}
+
+.grid p.img{
+padding:0;
+}
+
+p.readmore{
+padding:10px;
+}
+
+/*メイン コンテンツ*/
+section.content{
+padding:0 10px 10px;
+margin-bottom:20px;
+overflow:hidden;
+font-size:14px;
+background:#fff;
+box-shadow:0 0 3px #ddd;
+}
+
+* html section.content{height:1%;}
+
+section.content p{margin-bottom:5px;}
+
+h3.heading{
+padding:5px 10px;
+margin:0 -10px 20px;
+font-size:16px;
+color:#fff;
+border-top:5px solid #bc7d03;
+background:#eca92b;
+}
+
+section.content img{
+max-width:90%;
+height:auto;
+}
+
+img.frame,#gallery img{
+padding:3px;
+box-shadow:0 0 3px #ddd;
+}
+
+#gallery .grid{
+margin-bottom:10px;
+box-shadow:none;
+border:0;
+}
+
+.alignleft{
+float:left;
+clear:left;
+margin:3px 10px 10px 0;
+}
+
+.alignright{
+float:right;
+clear:right;
+margin:3px 0 10px 10px;
+}
+
+@media only screen and (min-width:960px){
+	#wrapper,.inner{
+	width:940px;
+	padding:0;
+	}
+
+	#wrapper{padding-bottom:20px;}
+
+  nav div.panel{
+	display:block !important;
+	float:right;
+	}
+
+	a#menu{display:none;}
+
+	nav#mainNav ul{
+	float:right;
+	overflow:hidden;
+	}
+
+	* html nav#mainNav ul{height:1%;}
+
+	nav#mainNav ul li{
+	float:left;
+	text-align:center;
+	border-right:1px solid #efede7;
+	}
+
+	nav#mainNav ul a{
+	font-size:13px;
+	display:block;
+	padding:50px 15px;
+	line-height:1.2;
+	color:#bc7d03;
+	background:#fff;
+	}
+
+	nav#mainNav ul span{
+	font-size:10px;
+	}
+
+	nav#mainNav ul li.active a,nav#mainNav ul a:hover{
+	color:#fff;
+	background:#bc7d03;
+	}
+
+	/* グリッド全体 */
+	.gridWrapper{
+	width:960px;
+	margin:0 0 0 -20px;
+	}
+
+	/* グリッド共通 ベース:トップページ4カラム */
+	.grid{
+	float:left;
+	width:220px;
+	margin-left:20px;
+	}
+
+
+/* モニター幅940px以下 */
+@media only screen and (max-width:940px){
+	*{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+	}
+
+	#header .inner,#footer .inner{margin:0;padding:0;}
+
+	#header .logo,#footer .logo{
+	float:none;
+	text-align:center;
+	padding:10px 5px;
+	}
+
+	nav#mainNav{
+	clear:both;
+	width:100%;
+	margin:0 auto;
+	padding:0;
+	background:#bc7d03;
+	}
+
+	nav#mainNav a.menu{
+	width:100%;
+	display:block;
+	height:40px;
+	line-height:40px;
+	font-weight: bold;
+	text-align:left;
+	color:#fff;
+	}
+
+	nav#mainNav a#menu span{padding-left:10px;}
+	nav#mainNav a.menu span:before{content: "→ ";}
+	nav#mainNav a.menuOpen span:before{content: "↓ ";}
+
+	nav#mainNav a#menu:hover{cursor:pointer;}
+
+	nav .panel{
+	display: none;
+	width:100%;
+	position: relative;
+	right: 0;
+	top:0;
+	z-index: 1;
+	}
+
+	nav#mainNav ul li{
+	float: none;
+	clear:both;
+	width:100%;
+	height:auto;
+	line-height:1.2;
+	}
+
+	nav#mainNav ul li a,nav#mainNav ul li.current-menu-item li a{
+	display: block;
+	padding:15px 10px;
+	text-align:left;
+	border-bottom:1px dotted #1e1e1e;
+	color:#fff;
+	background:#eca92b;
+	}
+
+	nav#mainNav ul li a span{padding-left:10px;}
+
+	nav#mainNav ul li:first-child a{border-top:1px dotted #1e1e1e;}
+
+	nav#mainNav ul li:last-child a{border:0;}
+
+	nav#mainNav ul li.active a,nav#mainNav ul li a:hover{background:#bc7d03;}
+
+	nav div.panel{float:none;}
+
+	.grid{
+	float:left;
+	width:48%;
+	margin:10px 2% 0 0;
+	}
+
+	.grid img{
+	float:left;
+	margin-right:5px;
+	}
+
+	#gallery{padding-left:1px;}
+
+	#gallery .grid{
+	width:23%;
+	margin:0 2% 0 0;
+	padding:0;
+	}
+
+	#gallery .grid img{
+	float:none;
+	margin:0;
+	}
